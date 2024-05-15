@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppTester.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTester"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <TextBox x:Name="TxtBxDemo" Grid.Row="0" BorderBrush="LightBlue" BorderThickness="4" Margin="5"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Button Grid.Row="1" x:Name="BtnFileCreated" FontSize="15" Content="File Created" Width="200" Click="BtnFileCreated_Click" Margin="5" />
+                <Button Grid.Row="1" x:Name="BtnFileModified" FontSize="15" Content="File Modified" Width="200" Click="BtnFileModified_Click" Margin="5" />
+                <Button Grid.Row="1" x:Name="BtnFileDeleted" FontSize="15" Content="File Deleted" Width="200" Click="BtnFileDeleted_Click" Margin="5" />
+                <Button Grid.Row="1" x:Name="BtnFileRenamed" FontSize="15" Content="File Renamed" Width="200" Click="BtnFileRenamed_Click" Margin="5" />
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
